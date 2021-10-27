@@ -1,7 +1,7 @@
 {
   "name": "editor",
   "author": "narutopig",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "./",
   "main": "build/electron.js",
@@ -27,9 +27,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "estart": "electron build/electron.js",
-    "package-osx": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=dist",
-    "package-win": "electron-packager . --overwrite --platform=win32 --arch=x64 --prune=true --out=dist",
-    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --prune=true --out=dist"
+    "package-osx": "electron-packager . \"Markdown Editor\" --overwrite --platform=darwin --arch=x64 --prune=true --out=dist",
+    "package-win": "electron-packager . \"Markdown Editor\" --overwrite --platform=win32 --arch=x64 --prune=true --out=dist",
+    "package-linux": "electron-packager . \"Markdown Editor\" --overwrite --platform=linux --arch=x64 --prune=true --out=dist"
   },
   "eslintConfig": {
     "extends": [
