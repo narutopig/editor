@@ -39,8 +39,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn estart`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Starts the Electron version (`yarn build` needs to be used first)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `yarn package-osx`, `yarn package-win`, `yarn package-linux`
+
+Currently the OSX package script works and the Linux might work (not sure I don't use Linux)
+Windows one does not work
