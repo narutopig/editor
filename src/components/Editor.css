@@ -1,0 +1,13 @@
+.editor {
+  display: flex;
+}
+
+.editor-input {
+    width: 50vw;
+    height: 100%;
+}
+
+.markdown-display {
+    width: 50vw;
+    height: 100%;
+}
