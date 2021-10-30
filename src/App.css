@@ -1,3 +1,11 @@
 .editor {
   display: flex;
 }
+
+.navbar {
+    background-color: #1E1E1E;
+}
+
+input[type='file'] {
+  color: transparent;
+}

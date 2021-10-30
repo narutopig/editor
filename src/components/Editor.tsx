@@ -1,10 +1,14 @@
 import React from "react";
 import Monaco from "@monaco-editor/react";
 import Markdown from "react-markdown";
+import "./Editor.css";
 
-function Editor() {
-  const [code, setCode] = React.useState("# Hello World!");
+interface EditorProps {
+  code: string;
+  setCode: (code: string) => any;
+}
 
+const Editor: React.FC<EditorProps> = ({ code, setCode }) => {
   return (
     <div className="editor">
       <Monaco
@@ -12,6 +16,7 @@ function Editor() {
         height="100vh"
         defaultLanguage="markdown"
         defaultValue={code}
+        value={code}
         theme="vs-dark"
         options={{
           formatOnType: true,
@@ -24,11 +29,11 @@ function Editor() {
         }}
         onChange={(code, ev) => setCode(code ?? "")}
       />
-      <div style={{ padding: "4vh" }}>
+      <div className="markdown-display">
         <Markdown>{code}</Markdown>
       </div>
     </div>
   );
-}
+};
 
 export default Editor;
